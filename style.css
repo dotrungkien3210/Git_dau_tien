@@ -1,0 +1,142 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.clearfix:after{
+	content: ' ';
+	width: 100%;
+	display: block;
+	clear: both;
+}
+body{
+	font-family: Roboto,san-serif;
+}
+/*                       HEADER                   */
+#header{
+background-color: #393939;
+color: white;
+padding: 25px 10px; /*căn chỉnh*/
+text-align: center;/*cho vào giữa dòng*/
+}
+/*                    NAV                    */
+#navbar{
+	text-align: center;
+	background-color: #463a3aa6;
+}
+#navbar li{
+	display: inline;
+}
+#navbar li a{
+	color: white;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 15px 20px;
+	height: 50px;
+	line-height: 50px;
+}
+#navbar li a:hover {
+background-color: black;
+border-radius: 5px;
+}
+/*                     MAIN                     */
+#main{
+background-color: #b125ab;
+color: #dfcd29;
+}
+#sidebar{
+background-color: #cfcfcf;
+float: left;
+width: 300px;
+min-height: 500px;
+}
+#sidebar ul li{
+	list-style: none; /*bỏ hết các dấu chấm*/
+	border-bottom: 1px solid #aaaaaa;
+}
+#sidebar ul li a{
+	color: black;
+	padding: 10px 15px;
+	text-align: center;
+text-decoration: none;
+display: block;
+}
+#sidebar ul li a:hover {
+background-color: #808080;
+color: white;
+}
+#content{
+width: calc(100% - 300px);
+float: left;
+min-height: 500px;
+}
+.clear{
+	display: block;
+	clear: both;
+	width: 100%;
+}
+.post{
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid black;
+}
+.post .post-action a{
+	text-decoration: none;
+	background-color: #ebebeb;
+	padding: 10px 20px;
+	color: black;
+	border-radius: 5px;
+	border: 1px solid #b1b1b1;
+	display: inline-block;/*chữ read more không bị đè lên bên trên*/
+}
+.post .post-action a:hover{
+	background-color: #717171;
+	color: #f3f3f3;
+	border: 1px solid #565656; 
+}
+/*.post h3, .post p, .post .post-action{
+	float: right;
+	width: calc(100%-180px);
+	box-sizing: border-box;
+
+}*/
+.post p{
+	margin: 15px;
+}
+.post img{
+	width: 250px;
+	height: 250px;
+	display: block;
+	float: left;
+}
+/*                        footer            */
+#footer{
+    background-color: #393939;
+	color: black;
+	padding: 30px 10px;
+	text-align: center;
+}
+#footer .box{
+	width: 33%;
+	float: left;
+}
+#footer h4{
+font-size: 17px;
+padding-bottom: 15px;
+margin-bottom: 15px;
+border-bottom: 1px solid white;
+margin-right: 50px;
+margin-left: 50px;
+}
+#footer ul li{
+	list-style: none;
+}
+#footer ul li a{
+	color: #757575;
+	text-decoration: none;
+	display: block;
+	padding: 10px 0px;
+}
+#footer ul li a:hover{
+	color: white;
+}
